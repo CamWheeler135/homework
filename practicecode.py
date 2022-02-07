@@ -1,3 +1,4 @@
+from audioop import reverse
 from itertools import combinations_with_replacement
 from operator import getitem
 from unicodedata import numeric
@@ -53,3 +54,13 @@ A = [1, 2, 3, 4, 5, 7, 8, 9, 12, 15, 124]
 B = [1, 2, 3, 4, 6, 7, 8, 13, 15, 135]
 
 print(list(set(A).intersection(B)))
+
+'''String Lists'''
+
+string = input("Please type in a word: ")
+
+if string == string[::-1]:
+    print("This is a palindrom")
+else:
+    print("This is not a palindrom")
+
