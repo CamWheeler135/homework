@@ -64,3 +64,34 @@ if string == string[::-1]:
 else:
     print("This is not a palindrom")
 
+'''Rock Paper Sissors'''
+
+while True:
+    player1  = input("player 1 choose, rock, paper or scissors?: ")
+    player2 = input("player 2 choose rock, paper or scissors?: ")
+
+    if player1 == player2:
+        print("The game is a draw")
+    elif player1 == "rock" and player2 == "scissors":
+        print("Player 1 wins")
+    elif player1 == "scissors" and player2 == "rock":
+        print("Player 2 wins")
+    elif player1 == "paper" and player2 == "rock":
+        print("Player 1 wins")
+    elif player1 == "rock" and player2 == "paper":
+        print("Player 2 wins")
+    elif player1 == "paper" and player2 == "scissors":
+        print("Player 2 wins")
+    elif player1 == "scissors" and player2 == "paper":
+        print("Player 1 wins")
+    else:
+        print("Ensure you have chosen rock, paper or scissors!")
+    
+    want_to_quit = input("Do you want to quit or play again?: ")
+    
+    if want_to_quit == "quit":
+        break
+    else:
+        ("Time to play again!")
+
+
