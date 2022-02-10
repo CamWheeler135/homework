@@ -1,7 +1,7 @@
 
 from cProfile import run
 from gettext import install
-import matplotlib
+
 
 '''Importing libraries'''
 
