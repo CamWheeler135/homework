@@ -1,7 +1,7 @@
 
 from cProfile import run
 from gettext import install
-
+import imp
 
 '''Importing libraries'''
 
@@ -15,9 +15,10 @@ dataset = pd.read_csv("Ads_Optimisation.csv")
 
 '''Implementing Random Selection'''
 '''Randomly showing user advert, if they click, we get reward (+1)'''
+'''Ensure we know exactly what we are coding!!!!!!!!!!!!!!!!!!!!!!'''
 
 import random 
-N = 10000
+N = 10000 
 d = 5
 ads_selected =[]
 total_reward = 0
@@ -39,16 +40,20 @@ print(total_reward)
 print (graph_random)
 
 '''Plotting results from 10 runs'''
+
 run_number = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 plt.scatter(run_number, graph_random)
+plt.xticks(run_number) ### unsure of this but it seems to work, without it the x values go up in 2. 
 plt.ylabel("Random Selection Reward")
 plt.xlabel("Run Number")
 plt.title("Random Selection Rewards")
-plt.legend()
 plt.show()
 
 '''Coding epsilon greedy algorithm'''
+
+import math 
+ 
 
 # choose epsilon expoloration probability 
 # choose n (number of iterations)
@@ -58,5 +63,4 @@ plt.show()
         # current_banit.pull_arm
 
 # reward = current_banit.pull_arm()
-# update estimation for what rewards the curren bandit gives 
-
+# update estimation for what rewards the curren bandit gives -0
