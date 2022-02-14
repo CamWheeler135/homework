@@ -3,6 +3,7 @@ from itertools import combinations_with_replacement
 from operator import getitem
 from unicodedata import numeric
 from xml.dom.minidom import Element
+import random
 
 print ("Hello World")
 print ("My name is Cameron")
@@ -94,4 +95,8 @@ while True:
     else:
         ("Time to play again!")
 
+'''Guessing Game One'''
 
+random_number = random.randint (1,9)
+
+print (random_number)
