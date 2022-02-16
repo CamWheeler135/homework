@@ -1,6 +1,7 @@
 from audioop import reverse
 from itertools import combinations_with_replacement
 from operator import getitem
+from tkinter import N
 from unicodedata import numeric
 from xml.dom.minidom import Element
 import random
@@ -95,8 +96,14 @@ while True:
     else:
         ("Time to play again!")
 
-'''Guessing Game One'''
+# A Fibonacci sequence is the next number in the sequence is the sum of the previous two numbers
+# In maths it is called a recurance relation, meaning that each term of the sequence is a function
+# of the preceding terms 
 
-random_number = random.randint (1,9)
+def fibonacci_of(n):
+    if n in {0, 1}:  # Base case
+        return n
+    return fibonacci_of(n - 1) + fibonacci_of(n - 2)  # Recursive case
 
-print (random_number)
+
+[fibonacci_of(n) for n in range(15)]
