@@ -19,3 +19,6 @@ else:
     print("This is the fibonacci sequence:")
     for i in range(nterms):
         print(fibonacci_sequence_code(i))
+
+for n in fibonacci_sequence_code:
+    print("hello")
