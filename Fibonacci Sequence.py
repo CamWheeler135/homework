@@ -4,7 +4,7 @@
 # In maths it is called a recurance relation, meaning that each term of the sequence is a function
 # of the preceding terms 
 # A factorial is the product of all the integers from one to (x) 6 = 1*2*3*4*5*6 = 720
-
+'''
 from optparse import Values
 
 def fibonacci_sequence_code(n):
@@ -25,8 +25,23 @@ else:
         every_second_number.append(fibonacci_sequence_code(i))
 
 
-print(every_second_number[::2])
+print(every_second_number[::2])'''
 
 
+# Program a list from 1 to 100
+# If the number divides by 3 or contains 3 = chip
+# If the number divides by 5 or contains 5 = chop
 
+number_list = list(range(1, 100))
 
+for i in range(len(number_list)):
+    if i % 3 == 0 and i % 5 == 0:
+        print(i, "ChipChop")
+    elif i % 5 == 0:
+        print(i, "Chop")
+    elif i % 3 == 0:
+        print(i, "Chip")
+
+for i in range(len(number_list)):
+    if (3 in number_list):
+        print("Chip")
