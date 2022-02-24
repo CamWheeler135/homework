@@ -41,4 +41,6 @@ for i in range(len(number_list)):
         print(i, "Chop")
     elif i % 3 == 0:
         print(i, "Chip")
+    else:
+        print(i)
 
