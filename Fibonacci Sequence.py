@@ -6,6 +6,7 @@
 # A factorial is the product of all the integers from one to (x) 6 = 1*2*3*4*5*6 = 720
 
 from optparse import Values
+import string
 
 def fibonacci_sequence_code(n):
     if n <= 1:
@@ -31,8 +32,10 @@ print(every_second_number[::2])
 # Program a list from 1 to 100
 # If the number divides by 3 or contains 3 = chip
 # If the number divides by 5 or contains 5 = chop
+# Change it to a string then we check for symbol
 
 number_list = list(range(1, 100))
+string_number_list = str(range(1, 100))
 
 for i in range(len(number_list)):
     if i % 3 == 0 and i % 5 == 0:
@@ -44,3 +47,4 @@ for i in range(len(number_list)):
     else:
         print(i)
 
+print(string_number_list)
