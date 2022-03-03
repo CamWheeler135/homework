@@ -35,7 +35,6 @@ print(every_second_number[::2])
 # Change it to a string then we check for symbol
 
 number_list = list(range(1, 100))
-string_number_list = str(range(1, 100))
 
 for i in range(len(number_list)):
     if i % 3 == 0 and i % 5 == 0:
@@ -47,4 +46,3 @@ for i in range(len(number_list)):
     else:
         print(i)
 
-print(string_number_list)
