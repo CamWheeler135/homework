@@ -8,6 +8,8 @@
 from optparse import Values
 import string
 
+from numpy import number
+'''
 def fibonacci_sequence_code(n):
     if n <= 1:
         return n
@@ -26,7 +28,7 @@ else:
         every_second_number.append(fibonacci_sequence_code(i))
 
 
-print(every_second_number[::2])
+print(every_second_number[::2])'''
 
 
 # Program a list from 1 to 100
@@ -44,9 +46,17 @@ for i in range(len(number_list)):
     elif i % 3 == 0:
         print(i, "Chip")
     else:
-        print(i)
+        str(i)
+        if '3' in str(i):
+            print(i, "Chip")
+        elif '5' in str(i):
+            print(i, "Chop")
+        else:
+            print(i)
+        
 
-number_list = str
+        
+
 # Changing number list into a string 
 
 # We need to scan the string now, and check if the list contains the symbol 
