@@ -96,14 +96,3 @@ while True:
     else:
         ("Time to play again!")
 
-# A Fibonacci sequence is the next number in the sequence is the sum of the previous two numbers
-# In maths it is called a recurance relation, meaning that each term of the sequence is a function
-# of the preceding terms 
-
-def fibonacci_of(n):
-    if n in {0, 1}:  # Base case
-        return n
-    return fibonacci_of(n - 1) + fibonacci_of(n - 2)  # Recursive case
-
-
-[fibonacci_of(n) for n in range(15)]
