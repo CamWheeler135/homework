@@ -36,7 +36,7 @@ print(every_second_number[::2])'''
 # If the number divides by 5 or contains 5 = chop
 # Change it to a string then we check for symbol if the string contains the symbol then we need to place chip or chop depending on the symbol.
 
-number_list = list(range(1, 100))
+number_list = list(range(1, 160))
 
 for i in range(len(number_list)):
     if i % 3 == 0 and i % 5 == 0:
@@ -57,8 +57,4 @@ for i in range(len(number_list)):
 
         
 
-# Changing number list into a string 
 
-# We need to scan the string now, and check if the list contains the symbol 
-
-# Depending on the value we need to print chip or chop
