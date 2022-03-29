@@ -38,7 +38,7 @@ print(every_second_number[::2])'''
 
 number_list = list(range(1, 160))
 
-'''for i in range(len(number_list)):
+for i in (number_list):
     if i % 3 == 0 and i % 5 == 0:
         print(i, "ChipChop")
     elif i % 5 == 0:
@@ -46,15 +46,9 @@ number_list = list(range(1, 160))
     elif i % 3 == 0:
         print(i, "Chip")
     else:
-        str(i)
-        if '53' in str(i):
-            print(i, "ChipChop")
-        elif '3' in str(i):
-            print(i, "Chip")
-        elif '5' in str(i):
-            print(i, "Chop")
-        else:
-            print(i)'''
+        print(i)
+
+
 
 for i in (number_list):
     str(i)
