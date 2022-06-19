@@ -10,3 +10,4 @@ This repo has all of the work I am doing by myself to progress my coding, progra
 ### Tutorials
 - Complete Python NumPy Tutorial - Keith Galli
 
+- Python Pandas Tutorial - Corey Schafer
