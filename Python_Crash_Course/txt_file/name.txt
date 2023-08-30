@@ -1,0 +1,1 @@
+Hello my name is Cameron, I really hope this code works, this is an attempt to cement in the process of opening a file, printing it's contents then closing the file with 'with'.

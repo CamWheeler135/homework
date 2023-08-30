@@ -1,0 +1,5 @@
+In python you can use classes to create instances 
+In python you can use functions to get the code to do things for you 
+In python we can build AI systems which is what I really want to do!
+In python we can read txt files 
+In python you can use dictionaries and lists
