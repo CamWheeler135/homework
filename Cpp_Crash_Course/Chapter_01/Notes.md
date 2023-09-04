@@ -1,6 +1,6 @@
 # Chapter 1 Notes
 
-#### Table of Contents
+## Table of Contents
 1. [Basic Structure of a C++ Program](#basic-structure-of-a-c-program)
 2. [Compiler Tool Chain](#compiler-tool-chain)
 3. [Bootstrapping C++](#bootstrapping-c)
@@ -155,4 +155,16 @@ There are really strong opinions when it comes to printing to the terminal, usin
 
 **Comments**
 
-Comments are human readable annotations for code, we can use inline comments with `//` or block comments with `/* */`.                  
+Comments are human readable annotations for code, we can use inline comments with `//` or block comments with `/* */`. 
+
+## Summary
+
+In this chapter we have gotten up and running with C++, we have learned about the structure of a simple program, how the complier tool chain works. We have also looked at how to declare variables, use conditional statements, functions and comments.
+
+
+## Exercises
+
+1. Create a function called absolute value tha returns the absolute value of a single argument.
+2. Create a function called sum that returns the sum of two arguments.
+
+
