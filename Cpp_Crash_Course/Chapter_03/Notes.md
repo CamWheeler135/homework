@@ -9,6 +9,11 @@ Reference types store memory addresses of objects. These types enable us to be r
 4. [Member-of-Pointer Operator](#member-of-pointer-operator)
 5. [Pointers and Arrays](#pointers-and-arrays)
 6. [Pointers are Dangerous](#pointers-are-dangerous)
+7. [References](#references)
+8. [Usage of Pointers and References](#usage-of-pointers-and-references)
+9. [this Pointers](#this-pointers)
+10. [const Correctness](#const-correctness)
+11. [auto Type Deduction](#auto-type-deduction)
 
 ## Pointers
 
@@ -415,7 +420,7 @@ Marking an argument as `const` prevents a function from modifying the argument. 
 
 **const methods**
 
-Marking a method `const` means that we promise to not modify current objects state within the const method. This means that we are only reading information, not changing it. We mark a method as constant bu placing the `const` keyword after the argument list, but before the method body
+Marking a method `const` means that we promise to not modify current objects state within the const method. This means that we are only reading information, not changing it. We mark a method as constant by placing the `const` keyword after the argument list, but before the method body
 
     class Class1 {
     private:
@@ -469,7 +474,7 @@ Member initializer lists are the primary mechanism or initing class members. To 
         }
 
         const int number; // Member init lists needed here. 
-        std::string name; // Not needed here but works :)
+        std::string name; // Not needed here but works :
     };
 
     int main(void) {
@@ -485,3 +490,38 @@ Member init lists execute before the body of the constructor, this has 2 main ad
 
 ## auto Type Deduction
 
+C++ is a strongly typed language, this means that we are handing the complier a lot of information. The complier can also infer tpye information from context. The `auto` keyword tells the complers to infer the variable type for us.
+
+••Initializing with auto**
+
+    auto my_int = 42; // int
+    auto my_string = "Hello"; // const char*
+    auto my_string_2 = std::string("Hello"); // std::string
+
+**auto and Reference types**
+
+We also add `&, *, const` to auto, and their intended meanings will be fulfilled.
+
+    auto& my_int_ref = my_int; // int&
+    auto* my_int_ptr = &my_int; // int*
+    const auto my_int_const = my_int; // const int
+
+Auto makes code simpler to refactor, consider the following example. 
+
+class Employee {
+    ...
+};
+
+Employee employees[10];
+
+class Contract {
+    void add(const Employee&);
+};
+
+void form_company(Contract &contract) {
+    for (const auto& employee : employees) {
+        contract.add(employee);
+    }
+}
+
+Whenever the type of employee changes, the for loop will work as expected. 
